@@ -21,7 +21,7 @@ public class Brand extends BaseEntity<Integer> {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "brand") //Use @OneToMany(mappedBy ..) to List
+    @OneToMany(mappedBy = "brand") // Use @OneToMany(mappedBy ..) to List
     private List<Model> models;
 
 }

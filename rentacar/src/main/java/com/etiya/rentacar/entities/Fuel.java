@@ -21,7 +21,7 @@ public class Fuel extends BaseEntity<Integer> {
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "fuel") //Use @OneToMany(mappedBy ..) to List
+    @OneToMany(mappedBy = "fuel") // Use @OneToMany(mappedBy ..) to List
     private List<Model> models;
 
 }

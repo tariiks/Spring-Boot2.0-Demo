@@ -3,6 +3,9 @@ package com.etiya.rentacar.entities;
 import com.etiya.rentacar.core.entities.BaseEntity;
 import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.List;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -26,5 +29,8 @@ public class Model extends BaseEntity<Integer> {
     @ManyToOne // An entity is related to multiple other entities
     @JoinColumn(name = "transmissionId")
     private Transmission transmission;
+
+    @OneToMany(mappedBy = "model") // Use @OneToMany(mappedBy ..) to List
+    private List<Car> cars;
 
 }

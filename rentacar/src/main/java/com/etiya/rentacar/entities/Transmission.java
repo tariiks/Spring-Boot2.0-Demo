@@ -18,7 +18,7 @@ public class Transmission extends BaseEntity<Integer>{
     @Column(name = "name")
     private String name;
 
-    @OneToMany(mappedBy = "transmission") //Use @OneToMany(mappedBy ..) to List
+    @OneToMany(mappedBy = "transmission") // Use @OneToMany(mappedBy ..) to List
     private List<Model> models;
 
 }

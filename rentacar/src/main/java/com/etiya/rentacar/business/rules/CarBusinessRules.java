@@ -1,5 +1,6 @@
 package com.etiya.rentacar.business.rules;
 
+import com.etiya.rentacar.business.messages.BrandMessages;
 import com.etiya.rentacar.business.messages.CarMessages;
 import com.etiya.rentacar.core.utilities.exceptions.types.BusinessException;
 import com.etiya.rentacar.dataAccess.abstracts.CarRepository;
@@ -24,4 +25,5 @@ public class CarBusinessRules {
             throw new BusinessException(CarMessages.carNameAlreadyExist);
         }
     }
+
 }
